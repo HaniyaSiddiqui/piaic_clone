@@ -115,7 +115,7 @@ const page = () => {
                                             {
                                                 cities.map((city, i) => (
 
-                                                    <tr className="m-4">
+                                                    <tr key={`cities-${i}`} className="m-4">
                                                         <td className="text-hover w-8">{++i}</td>
                                                         <td className="w-8">
                                                             <div className="w-4 h-4 rounded-full border border-hover bg-hover"></div>
@@ -141,7 +141,7 @@ const page = () => {
 
                     {
                         dataPoint.map((item, i) => (
-                            <div className={` ${item.bgColor} mb-2 shadow-xl  rounded-xl border border-slate-200 py-12 px-8`}>
+                            <div key={`points-${i}`} className={` ${item.bgColor} mb-2 shadow-xl  rounded-xl border border-slate-200 py-12 px-8`}>
 
 
                                 <div className="flex flex-col sm:flex-row    mb-10  ">
