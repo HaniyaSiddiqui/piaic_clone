@@ -125,3 +125,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #02645f;
 }
+
+
+.video-thumbnail {
+  width: 120px;
+height: 80px;
+}

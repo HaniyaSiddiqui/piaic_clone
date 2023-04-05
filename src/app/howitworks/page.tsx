@@ -142,26 +142,16 @@ const page = () => {
                     {
                         dataPoint.map((item, i) => (
                             <div key={`points-${i}`} className={` ${item.bgColor} mb-2 shadow-xl  rounded-xl border border-slate-200 py-12 px-8`}>
-
-
                                 <div className="flex flex-col sm:flex-row    mb-10  ">
-
                                     <div className="  relative flex items-center justify-center text-lg mb-4 sm:mb-0 sm:mr-4 " >
                                         <CircleNumber number={item.id} circleColor={item.circleColor} circleBg={item.circleBg} />
                                     </div>
-
-
-
                                     <Points textColor={item.textColor} textSize={item.textSize} text={item.text} />
-
                                 </div>
                             </div>
 
                         ))
                     }
-
-
-
                 </Wrapper>
             </div>
 

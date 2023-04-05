@@ -40,13 +40,14 @@ const CoreTrackData = [
 const CoreTracks = () => {
     const header = 'Available Programs';
     return (
-        <section className='mt-10  relative'>
+        <section className='mt-10  relative '>
             <Wrapper>
 
 
 
 
-                <div className='max-w-screen-sm'>
+                {/* <div className='max-w-screen-lg bg-slate-700'> */}
+                <div className="flex flex-col md:flex-row items-center h:screen  " >
                     <div className="absolute left-0 w-[315px] h-[315px] bg-secondary rounded-full shadow-xl blur-[250px]"></div>
 
 
@@ -58,7 +59,7 @@ const CoreTracks = () => {
 
                 {/* Boxes */}
 
-                <div className="my-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6 justify-center items-center">
+                <div className=" grid grid-cols-2 md:grid-cols-2 my-10  lg:grid-cols-4  gap-x-4 gap-y-6 justify-center items-center">
                     {
                         CoreTrackData.map((item, i) => (
                             <QuarterBox

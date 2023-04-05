@@ -49,36 +49,24 @@ const DivCarousel = () => {
                             interval={3000}
                             transitionTime={500}
                             stopOnHover={false}
-
                         >
-
-                            {
-                                items.map((item, i) => (
-
-                                    <div key={i} className='flex gap-x-8 items-center flex-col-reverse md:flex-row'>
-
-
-                                        <div className="flex-1 py-20 ">
-                                            <Image src={item.image} alt={item.title} className='rounded-lg ' />
-                                        </div>
-
-
-                                        <div className='flex-1 '>
-                                            <h2 className='font-bold text-4xl'>{item.title}</h2>
-                                            <p className='mt-4 text-md text-slate-200'>{item.description}</p>
-                                        </div>
+                            {items.map((item, i) => (
+                                <div key={i} className='flex gap-x-8 items-center flex-col-reverse md:flex-row'>
+                                    <div className="flex-1 py-20 md:py-0">
+                                        <Image src={item.image} alt={item.title} className='rounded-lg' />
                                     </div>
-                                ))
-                            }
-
+                                    <div className='flex-1'>
+                                        <h2 className='font-bold text-4xl md:text-5xl lg:text-6xl'>{item.title}</h2>
+                                        <p className='mt-4 text-md md:text-lg text-slate-200'>{item.description}</p>
+                                    </div>
+                                </div>
+                            ))}
                         </Carousel>
-                        <div className="absolute right-0 w-[315px] h-[315px] bg-secondary rounded-full shadow-xl blur-[250px]">
-
-
-
+                        <div className="absolute right-0 md:w-[315px] md:h-[315px] lg:w-[350px] lg:h-[350px] bg-secondary rounded-full shadow-xl blur-[250px]">
                         </div>
                     </div>
                 </div>
+
             </Wrapper >
         </section >
 
